@@ -22,12 +22,13 @@ public class Energy {
 		double mass = scanner.nextDouble();
 		scanner.close();
 		
+		// mass can not be negative
 		if (mass < 0) { 
 			
 			System.out.println("Invaild number! Please, try other numbers");
 		}
 		else {
-			double energy = mass * LIGHTSPEED;
+			double energy = mass * Math.pow(LIGHTSPEED, 2);
 			
 			System.out.println("If " + mass + " kg of energy was converted to Joule (J). It will produce "+ energy + " J of energy.");
 		}
