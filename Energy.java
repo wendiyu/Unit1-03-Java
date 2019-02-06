@@ -24,7 +24,7 @@ public class Energy {
 		
 		double energy = mass * LIGHTSPEED;
 		
-		System.out.println("If " + mass + " kg of energy was converted to Joule (J). It will produce "+ energy + "J of energy.");
+		System.out.println("If " + mass + " kg of energy was converted to Joule (J). It will produce "+ energy + " J of energy.");
 
 	}
 
