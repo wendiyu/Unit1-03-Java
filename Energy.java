@@ -22,9 +22,15 @@ public class Energy {
 		double mass = scanner.nextDouble();
 		scanner.close();
 		
-		double energy = mass * LIGHTSPEED;
-		
-		System.out.println("If " + mass + " kg of energy was converted to Joule (J). It will produce "+ energy + " J of energy.");
+		if (mass < 0) { 
+			
+			System.out.println("Invaild number! Please, try other numbers");
+		}
+		else {
+			double energy = mass * LIGHTSPEED;
+			
+			System.out.println("If " + mass + " kg of energy was converted to Joule (J). It will produce "+ energy + " J of energy.");
+		}
 
 	}
 
